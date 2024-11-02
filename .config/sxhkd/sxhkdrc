@@ -31,14 +31,11 @@ super + z
 super + shift + z
 	remaps
 
-# keyboard layout change
-super + alt + m
-	toggle-keyboard
-
 # calculator
 super + alt + e
 	rofi -show calc
 
+# copy github file
 super + ctrl + c
 	xclip -selection clipboard ~/Documents/junkfile.txt
 
