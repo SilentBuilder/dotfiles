@@ -1,0 +1,13 @@
+alias \
+  cf="cd ~/.config && lsa" \
+  cac="cd ~/.cache && lsa" \
+  dt="cd ~/.local/share && lsa" \
+  sc="cd ~/.local/bin && lsa" \
+  mn="cd /mnt && lsa" \
+  h="cd ~ && lsa" \
+  Doc="cd ~/Documents && lsa" \
+  Dow="cd ~/Downloads && lsa" \
+  Mus="cd ~/Music && lsa" \
+  Pic="cd ~/Pictures && lsa" \
+  Vid="cd ~/Videos && lsa" \
+  pyfl="cd ~/Documents/Code/python && lsa" \

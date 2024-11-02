@@ -1,0 +1,11 @@
+hash -d cf=~/.config
+hash -d cac=~/.cache
+hash -d dt=~/.local/share
+hash -d sc=~/.local/bin
+hash -d mn=/mnt
+hash -d Doc=~/Documents
+hash -d Dow=~/Downloads
+hash -d Mus=~/Music
+hash -d Pic=~/Pictures
+hash -d Vid=~/Videos
+

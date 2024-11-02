@@ -1,0 +1,28 @@
+configuration {
+    display-drun: "Applications:";
+    display-window: "Windows:";
+    font: "JetBrainsMono Nerd Font Medium 10";
+    line-margin: 10;
+    modi: "window,run,drun,calc";
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    display-combi:  "󰪚";
+    show-icons:     true;
+    icon-theme: "Nordic";
+}
+
+
+@theme "~/.config/rofi/nord.rasi"
+
+listview {
+	lines: 6;
+	columns: 1;
+}
+
+window {
+	width: 30%;
+}

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+monitor_width=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
+
+polybar_width=$((monitor_width - 10))
+
+echo $polybar_width

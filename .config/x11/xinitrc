@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# xrandr --dpi 96
+# xrdb /home/anonymous/x11/xresources & xrdbpid=$!
+
+# autostart="remapd"
+# for program in $autostart; do
+#   pidof -sx "$program" || "$program" &
+# done >/dev/null 2>&1
+
+# ensure that xrdb has finished running before moving on to the WM/DE
+# [ -n "$xrdbpid" ] && wait "$xrdbpid"
+
+dbus-update-activation-environment --all
+exec bspwm

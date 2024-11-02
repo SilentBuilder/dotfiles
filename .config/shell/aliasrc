@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# skip over sudo for some commands
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+  alias $command="sudo $command"
+done; unset command
+
+# verbosity settings:
+alias \
+  cp="cp -iv" \
+  mv="mv -iv" \
+  rm="rm -vI" \
+  bc="bc -ql" \
+  mkd="mkdir -pv"
+
+# colorize commands:
+alias \
+  ls="ls -hN --color=auto --group-directories-first" \
+  lsa="ls -hAN --color=auto --group-directories-first" \
+  grep="grep --color=auto" \
+  diff="diff --color=auto" \
+  ccat="highlight --out-format=ansi" \
+  ip="ip -color=auto"
+
+# abbreviate common commands:
+alias \
+  ka="killall" \
+  g="git" \
+  sdn="shutdown -h now" \
+  e="$EDITOR" \
+  v="$EDITOR" \
+  p="pacman" \
+  xi="sudo xbps-install" \
+  xr="sudo xbps-remove -R" \
+  xq="xbps-query" \
+  z="zathura"
