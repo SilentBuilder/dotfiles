@@ -8,43 +8,41 @@
 .xsession-errors.old
 
 # personal folders
-Documents/**
-Downloads/**
-Music/**
-Pictures/**
-Videos/**
+Documents
+Downloads
+Music
+Pictures
+Videos
 
 # other junk
-.config/nvim/**
 .config/nvim
 .emacs.d/
-.yarn/**
-.npm/**
-.pki/**
-.hidden/**
-.stack/**
-.mozilla/**
-.minecraft/**
-.local/share/**
+.yarn
+.npm
+.pki
+.hidden
+.stack
+.mozilla
+.minecraft
+.local/share
 !.local/share/slock/
 !.local/share/icons/dunst/
 !Pictures/wallpaper.png
 !Pictures/wallpaper2.jpg
-.local/state/**
-.git/**
-.cargo/**
-.cache/**
+.local/state
+.cargo
+.cache
 .config/QtProject.conf
-.config/brightness_controller/**
+.config/brightness_controller
 .config/ncmpcpp/error.log
-.config/qBittorrent/**
-.config/libreoffice/**
-.config/Pinta/**
-.config/Kitware/**
-.config/GIMP/**
-.config/bluetuith/**
-.config/obs-studio/**
-.config/fontforge/**
+.config/qBittorrent
+.config/libreoffice
+.config/Pinta
+.config/Kitware
+.config/GIMP
+.config/bluetuith
+.config/obs-studio
+.config/fontforge
 .config/dconf/user
 .config/mpd/database
 .config/kritarc
@@ -57,8 +55,9 @@ Videos/**
 .config/kiorc
 .config/ktrashrc
 .config/session
-.gnupg/**
-.librewolf/**
+.config/BraveSoftware
+.gnupg
+.librewolf
 
 # possible
 .gtkrc-2.0
