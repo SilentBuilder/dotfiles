@@ -63,6 +63,7 @@ Videos
 .config/sxhkd/Keylayout.png
 .config/sxhkd/.git
 .config/sxhkd/.gitignore
+.config/sxhkd/readme.md
 .gnupg
 .librewolf
 
