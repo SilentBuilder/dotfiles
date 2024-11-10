@@ -3,7 +3,7 @@
 export TERMINAL="~/.local/bin/xdg-terminal-exec"
 xrandr --dpi 96
 remapd &
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd > /dev/null || sxhkd -c ~/.config/sxhkd/sxhkdrc ~/.config/sxhkd/private.sxhkd &
 xsetroot -cursor_name left_ptr &
 xrdb -load ~/.config/x11/xresources
 xinput set-prop 12 "libinput Accel Speed" 1.0
