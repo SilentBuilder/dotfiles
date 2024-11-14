@@ -64,7 +64,9 @@ Videos
 .config/sxhkd/.git
 .config/sxhkd/.gitignore
 .config/sxhkd/readme.md
+.config/JetBrains
 .gnupg
+.java
 .librewolf
 
 # possible
