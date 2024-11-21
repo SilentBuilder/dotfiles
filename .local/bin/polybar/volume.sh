@@ -15,7 +15,7 @@ split() {
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
 case 1 in
-  $((vol >= 70)) ) icon="󰕾 " ;;
+  $((vol >= 50)) ) icon="󰕾 " ;;
   $((vol >= 25)) ) icon="󰖀 " ;;
   $((vol >= 1)) ) icon="󰕿 " ;;
   * ) echo "󰖁" && exit ;;
