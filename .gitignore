@@ -67,6 +67,8 @@ Videos
 .config/sxhkd/readme.md
 .config/JetBrains
 .config/systemd
+.config/Thunar
+.config/xfce4
 .gnupg
 .java
 .librewolf
