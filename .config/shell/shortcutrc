@@ -13,8 +13,8 @@ alias \
   pyfl="cd ~/Documents/Code/python && lsa" \
   emfl="cd ~/.emacs.d && lsa" \
   sxfl="cd ~/.config/sxhkd/ && lsa" \
-  ased="cd ~/.hidden/Code/Labwork-ASC && lsa" \
-  pyed="cd ~/.hidden/Code/PycharmProjects/simpleScript/Labwork && lsa" \
+  ased="cd ~/.hidden/Code\ -\ University/Labwork-ASC && lsa" \
+  pyed="cd ~/.hidden/Code\ -\ University/PycharmProjects/simpleScript/Labwork && lsa" \
   hdfl="cd ~/.hidden && lsa" \
   yffl="cd ~/.hidden/Y\ Files && lsa" \
   zffl="cd ~/.hidden/Z\ Files && lsa" \

@@ -69,6 +69,7 @@ Videos
 .config/systemd
 .config/Thunar
 .config/xfce4
+.config/torbrowser
 .gnupg
 .java
 .librewolf
