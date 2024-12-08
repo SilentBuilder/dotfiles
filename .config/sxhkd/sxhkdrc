@@ -39,18 +39,6 @@ super + alt + e
 super + ctrl + c
 	xclip -selection clipboard ~/Documents/junkfile.txt
 
-# notes
-super + a
-	emacs ~/Documents/Personal/Notes/Index.org
-
-# reset notes
-super + alt + a
-	~/.local/bin/reset-org.sh
-
-# nvim match.txt
-super + shift + a
-	kitty nvim ~/Documents/match.txt
-
 # firefox
 super + w
 	firefox

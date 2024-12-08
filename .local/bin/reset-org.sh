@@ -1,6 +1,6 @@
 #!/bin/sh
 
-base_dir="$HOME/Documents/Personal/Notes/Struct"
+base_dir="$HOME/.hidden/Notes/Struct"
 files=("Morning.org" "Afternoon.org" "Evening.org" "Night.org")
 
 for file in "${files[@]}"; do
