@@ -3,9 +3,11 @@
 # this script is called on startup to remap keys
 # decrease key repeat delay to 300ms and increase key repeat rate to 50 per second:
 xset r rate 300 50
-# map the caps lock key to super and map the menu key to right super:
+# map the caps lock key to super
 setxkbmap -option caps:super
 # when caps lock is pressed only once, treat is as escape:
 killall xcape 2>/dev/null ; xcape -e 'Super_L=Escape'
 # turn off caps lock if on since there is no longer a key for it:
 xset -q | grep -q "Caps Lock:\s*on" && xdotool key Caps_Lock
+
+source ~/.zprofile

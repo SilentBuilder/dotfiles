@@ -57,5 +57,9 @@ export LESSOPEN="| /usr/bin/highlight -0 ansi %s 2>/dev/null"
 export MOZ_USE_XINPUT2=1
 export BAT_THEME="Nord"
 
+if [ -f ~/.config/x11/.xmodmap ]; then
+  xmodmap ~/.config/x11/.xmodmap
+fi
+
 # loading shortcuts:
 [ ! -f "$XDG_CONFIG_HOME/shell/shortcutrc" ] && setsid -f shortcuts >/dev/null 2>&1

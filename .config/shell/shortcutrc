@@ -10,7 +10,7 @@ alias \
   Mus="cd ~/Music && lsa" \
   Pic="cd ~/Pictures && lsa" \
   Vid="cd ~/Videos && lsa" \
-  pyfl="cd ~/Documents/Code/python && lsa" \
+  pyfl="cd ~/.hidden/Code/Python && lsa" \
   emfl="cd ~/.emacs.d && lsa" \
   sxfl="cd ~/.config/sxhkd/ && lsa" \
   ased="cd ~/.hidden/Code\ -\ University/Labwork-ASC && lsa" \
