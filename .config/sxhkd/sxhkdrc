@@ -47,14 +47,6 @@ super + w
 super + e
 	kitty lf
 
-# lf file manager ~/Documents/Books/
-super + ctrl + e
-	kitty lf ~/Documents/Books/
-
-# lf file manager ~/Videos/Media/
-super + shift + e
-	kitty lf ~/Videos/Media/
-
 # anki
 super + r
 	anki

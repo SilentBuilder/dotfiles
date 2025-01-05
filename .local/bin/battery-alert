@@ -1,39 +1,35 @@
 #!/bin/sh
 
-# Send a notification if the laptop battery is either low or is fully charged.
-# Set on a systemd timer (~/.config/systemd/user/battery-alert.timer).
-
 export display=:0
 export dbus_session_adress="unix:path=/run/user/1000/bus"
 
-# Battery percentage at which to notify
 warning_level=10
-critical_level=5
+critical_level=6
 battery_discharging=$(acpi -b | grep "Battery 0" | grep -c "Discharging")
 battery_level=$(acpi -b | grep "Battery 0" | grep -P -o '[0-9]+(?=%)')
 
-# Use files to store whether we've shown a notification or not (to prevent multiple notifications)
 full_file=/tmp/batteryfull
 empty_file=/tmp/batteryempty
 critical_file=/tmp/batterycritical
 
-# Reset notifications if the computer is charging/discharging
 if [ "$battery_discharging" -eq 1 ] && [ -f $full_file ]; then
-	rm $full_file
+  rm $full_file
 elif [ "$battery_discharging" -eq 0 ] && [ -f $empty_file ]; then
-	rm $full_file
+  rm $full_file
 fi
 
 # If the battery is charging and is full (and has not shown notification yet)
 if [ "$battery_level" -gt 99 ] && [ "$battery_discharging" -eq 0 ] && [ ! -f $full_file ]; then
-	notify-send "Battery Charged" "Battery is fully charged." -i "battery-charged" -r 9991
-	touch $full_file
-	# If the battery is low and is not charging (and has not shown notification yet)
+  notify-send "Battery Charged" "Battery is fully charged." -i "battery-charged" -r 9991
+  touch $full_file
+
+# If the battery is low and is not charging (and has not shown notification yet)
 elif [ "$battery_level" -le $warning_level ] && [ "$battery_discharging" -eq 1 ] && [ ! -f $empty_file ]; then
-	notify-send "Low Battery" "${battery_level}% of battery remaining." -u critical -i "battery-alert" -r 9991
-	touch $empty_file
-	# If the battery is critical and is not charging (and has not shown notification yet)
+  notify-send "Low Battery" "${battery_level}% of battery remaining." -u critical -i "battery-alert" -r 9991
+  touch $empty_file
+
+# If the battery is critical and is not charging (and has not shown notification yet)
 elif [ "$battery_level" -le $critical_level ] && [ "$battery_discharging" -eq 1 ] && [ ! -f $critical_file ]; then
-	notify-send "Battery Critical" "The computer will shutdown soon." -u critical -i "battery-alert" -r 9991
-	touch $critical_file
-	fi
+  notify-send "Battery Critical" "The computer will shutdown soon." -u critical -i "battery-alert" -r 9991
+  touch $critical_file
+fi
