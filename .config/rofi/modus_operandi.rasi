@@ -1,0 +1,111 @@
+/*
+ * Modus Operandi rofi theme
+ * Adapted for a light theme
+ * 
+ * Based on Modus Operandi colors from Emacs
+ */
+
+* {
+    modus-bg: #ffffff;
+    modus-bg-alt: #f8f8f8;
+    modus-fg: #000000;
+    modus-fg-alt: #333333;
+
+    modus-blue: #0031a9;
+    modus-cyan: #005f88;
+    modus-green: #228b22;
+    modus-yellow: #a45a00;
+    modus-red: #a60000;
+    modus-magenta: #721045;
+
+    background-color: @modus-bg;
+    foreground: @modus-fg;
+    highlight: underline bold #c4c4c4;
+    transparent: rgba(255,255,255,0);
+}
+
+window {
+    location: center;
+    anchor: center;
+    transparency: "screenshot";
+    padding: 0px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: @transparent;
+    spacing: 0;
+    children: [mainbox];
+    orientation: horizontal;
+}
+
+mainbox {
+    spacing: 0;
+    children: [inputbar, message, listview];
+}
+
+message {
+    color: @modus-fg;
+    padding: 5;
+    border-color: @modus-blue;
+    border: 0px 1px 1px 1px;
+    background-color: @modus-bg-alt;
+}
+
+inputbar {
+    color: @modus-fg;
+    padding: 11px;
+    background-color: @modus-bg-alt;
+    border: 1px;
+    border-radius: 6px 6px 0px 0px;
+    border-color: @modus-blue;
+}
+
+entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color: inherit;
+}
+
+prompt {
+    margin: 0px 1em 0em 0em;
+}
+
+listview {
+    padding: 8px;
+    border-radius: 0px 0px 6px 6px;
+    border-color: @modus-blue;
+    border: 0px 1px 1px 1px;
+    background-color: rgba(255, 255, 255, 0.9);
+    dynamic: false;
+}
+
+element {
+    padding: 3px;
+    vertical-align: 0.5;
+    border-radius: 4px;
+    background-color: transparent;
+    color: @modus-fg;
+    text-color: @modus-fg-alt;
+}
+
+element selected.normal {
+    background-color: @modus-blue;
+    text-color: @modus-bg;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+button {
+    padding: 6px;
+    color: @modus-fg;
+    horizontal-align: 0.5;
+    border: 1px 0px 1px 1px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: @modus-fg;
+}
+
+button selected normal {
+    border: 1px 0px 1px 1px;
+    border-color: @modus-fg;
+}

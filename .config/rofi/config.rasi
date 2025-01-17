@@ -16,7 +16,7 @@ configuration {
 }
 
 
-@theme "~/.config/rofi/nord.rasi"
+@theme "~/.config/rofi/modus_operandi.rasi"
 
 listview {
 	lines: 6;

@@ -1,10 +1,10 @@
 return {
   {
-    'shaunsingh/nord.nvim',
+    'miikanissi/modus-themes.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'nord'
+      vim.cmd.colorscheme 'modus_operandi'
     end,
   },
 

@@ -8,43 +8,31 @@ fx_list=(dim blur dimblur pixel dimpixel color)
 dim_level=40
 blur_level=1
 pixel_scale=10,1000
-solid_color=000000
-wallpaper_cmd="feh --no-fehbg --bg-fill /home/anonymous/Pictures/wallpaper.png"
+solid_color=ffffff
+wallpaper_cmd="feh --no-fehbg --bg-fill '/home/anonymous/.config/config_images/wallpaper3.jpg'"
 quiet=false
 
 # default theme
-loginbox=2e3440
-loginshadow=2e3440
+loginbox=FFFFFF
+loginshadow=FFFFFF
 locktext="Type password to unlock..."
 font="monospace"
-ringcolor=d8dee9
-insidecolor=2e3440
-separatorcolor=2e3440
-ringvercolor=d8dee9
-insidevercolor=2e3440
-ringwrongcolor=d8dee9
-insidewrongcolor=bf616a
-timecolor=d8dee9
+ringcolor=000000
+insidecolor=f0f0f0
+separatorcolor=9f9f9f
+ringvercolor=0031a9
+insidevercolor=d0d6ec
+ringwrongcolor=a60000
+insidewrongcolor=ff8f88
+timecolor=000000
 time_format="%H:%M:%S"
-greetercolor=d8dee9
-layoutcolor=d8dee9
-keyhlcolor=bf616a
-bshlcolor=bf616a
+greetercolor=193668
+layoutcolor=193668
+keyhlcolor=0031a9
+bshlcolor=a60000
 veriftext="Verifying..."
-verifcolor=d8dee9
+verifcolor=0031a9
 wrongtext="Failure!"
-wrongcolor=bf616a
-modifcolor=bf616a
-bgcolor=2e3440
-
-
-#
-# expert options (change at own risk!)
-#
-
-# i3lockcolor_bin="i3lock-color"      # Manually set command for i3lock-color
-# suspend_command="systemctl suspend" # Manually change action e.g. hibernate/suspend-command
-
-# i3lock-color - custom arguments
-# lockargs=() 						  # overwriting default "(-n)"
-# lockargs+=(--ignore-empty-password) # appending new argument
+wrongcolor=a60000
+modifcolor=a60000
+bgcolor=ffffff

@@ -4,7 +4,7 @@ return {
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'nord',
+        theme = 'modus',
         component_separators = '|',
         section_separators = '',
       },

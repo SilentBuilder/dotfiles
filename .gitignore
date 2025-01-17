@@ -71,6 +71,7 @@ Videos
 .config/xfce4
 .config/torbrowser
 .config/discord
+.config/wget
 .gnupg
 .java
 .librewolf

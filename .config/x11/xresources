@@ -14,42 +14,41 @@
 /* cyan		6	14 */
 /* white	7	15 */
 
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+#define modus-bg-main #ffffff
+#define modus-bg-dim #f0f0f0
+#define modus-fg-main #000000
+#define modus-fg-dim #595959
+#define modus-fg-alt #193668
+#define modus-bg-active #c4c4c4
+#define modus-bg-inactive #e0e0e0
+#define modus-border #9f9f9f
+#define modus-red #a60000
+#define modus-green #006800
+#define modus-yellow #6f5500
+#define modus-blue #0031a9
+#define modus-magenta #721045
+#define modus-cyan #005e8b
+#define modus-white #000000
 
-*.foreground:   #D8DEE9
-*.background:   #2E3440
-*.cursorColor:  #D8DEE9
+*.foreground:   #000000
+*.background:   #ffffff
+*.cursorColor:  #000000
 *fading: 35
-*fadeColor: #4C566A
+*fadeColor: #c4c4c4
 
-*.color0: #2E3440
-*.color1: #BF616A
-*.color2: #A3BE8C
-*.color3: #EBCB8B
-*.color4: #81A1C1
-*.color5: #B48EAD
-*.color6: #88C0D0
-*.color7: #E5E9F0
-*.color8: #4C566A
-*.color9: #BF616A
-*.color10: #A3BE8C
-*.color11: #EBCB8B
-*.color12: #81A1C1
-*.color13: #B48EAD
-*.color14: #8FBCBB
-*.color15: #ECEFF4
+*.color0: #000000
+*.color1: #a60000
+*.color2: #006800
+*.color3: #6f5500
+*.color4: #0031a9
+*.color5: #721045
+*.color6: #005e8b
+*.color7: #595959
+*.color8: #e0e0e0
+*.color9: #a60000
+*.color10: #006800
+*.color11: #6f5500
+*.color12: #0031a9
+*.color13: #721045
+*.color14: #005e8b
+*.color15: #000000

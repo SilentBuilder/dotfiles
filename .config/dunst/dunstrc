@@ -1,5 +1,5 @@
 [global]
-  frame_color = "#81a1c1"
+  frame_color = "#000000"
   monitor = 0
   follow = mouse
   width = 350
@@ -16,7 +16,7 @@
   indicate_hidden = yes
   shrink = no
   separator_height = 2
-  separator_color = "#3b4252"
+  separator_color = "#000000"
   padding = 8
   horizontal_padding = 8
   frame_width = 1
@@ -56,21 +56,21 @@
   per_monitor_dpi = false
 
 [urgency_low]
-  background = "#2e3440"
-  foreground = "#d8dee9"
-  highlight = "#d8dee9"
-  frame_color = "#81a1c1"
+  background = "#ffffff"
+  foreground = "#000000"
+  highlight = "#000000"
+  frame_color = "#000000"
   timeout = 5
 
 [urgency_normal]
-  background = "#2e3440"
-  foreground = "#d8dee9"
-  highlight = "#d8dee9"
-  frame_color = "#81a1c1"
+  background = "#ffffff"
+  foreground = "#000000"
+  highlight = "#000000"
+  frame_color = "#000000"
   timeout = 5
 
 [urgency_critical]
-  background = "#2e3440"
-  foreground = "#d8dee9"
-  frame_color = "#bf616a"
+  background = "#ffffff"
+  foreground = "#900000"
+  frame_color = "#d70000"
   timeout = 1000

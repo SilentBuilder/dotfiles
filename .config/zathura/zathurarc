@@ -22,35 +22,33 @@ set statusbar-h-padding 0
 set statusbar-v-padding 0
 set page-padding        1
 
-# NORD THEME
-# ----------
-set default-bg              "#ffffff"
-set statusbar-bg            "#2e3440" # nord0
-#set default-bg              "#2e3440" # nord0
-#set default-fg              "#d8dee9" # nord4
-#set statusbar-bg            "#2e3440" # nord0
-#set statusbar-fg            "#d8dee9" # nord4
-#set inputbar-bg             "#2e3440" # nord0
-#set inputbar-fg             "#a3be8c" # nord14
-#set completion-bg           "#2e3440" # nord0
-#set completion-fg           "#d8dee9" # nord4
-#set completion-group-bg     "#2e3440" # nord0
-#set completion-group-fg     "#d8dee9" # nord4
-#set completion-highlight-bg "#434c5e" # nord2
-#set completion-highlight-fg "#d8dee9" # nord4
-#set notification-bg         "#3b4252" # nord2
-#set notification-fg         "#eceff4" # nord6
-#set notification-error-bg   "#bf616a" # nord11
-#set notification-error-fg   "#eceff4" # nord6
-#set notification-warning-bg "#ebcb8b" # nord13
-#set notification-warning-fg "#2e3440" # nord0
-#set highlight-color         "#5e81ac" # nord10
-#set highlight-active-color  "#88c0d0" # nord8
-#set index-bg                "#2e3440" # nord0
-#set index-fg                "#d8dee9" # nord4
-#set index-active-bg         "#434c5e" # nord2
-#set index-active-fg         "#d8dee9" # nord4
-#set recolor-darkcolor       "#d8dee9" # nord4
-#set recolor-lightcolor      "#2e3440" # nord0
-#set render-loading-bg       "#2e3440" # nord0
-#set render-loading-fg       "#d8dee9" # nord4
+# MODUS OPERANDI THEME
+# --------------------
+set default-bg              "#ffffff"  # PDF background (white)
+set statusbar-bg            "#f0f0f0"  # Status bar background (light gray)
+set default-fg              "#000000"  # Text color (dark gray)
+set statusbar-fg            "#000000"  # Status bar text color (dark gray)
+set inputbar-bg             "#f0f0f0"  # Input bar background (light gray)
+set inputbar-fg             "#000000"  # Input bar text color (dark gray)
+set completion-bg           "#ffffff"  # Completion menu background (white)
+set completion-fg           "#000000"  # Completion menu text color (dark gray)
+set completion-group-bg     "#ffffff"  # Completion group background (white)
+set completion-group-fg     "#000000"  # Completion group text color (dark gray)
+set completion-highlight-bg "#e0e0e0"  # Highlighted completion background (light gray)
+set completion-highlight-fg "#000000"  # Highlighted completion text color (dark gray)
+set notification-bg         "#ffffff"  # Notification background (white)
+set notification-fg         "#000000"  # Notification text color (dark gray)
+set notification-error-bg   "#ff5c57"  # Error notification background (light red)
+set notification-error-fg   "#ffffff"  # Error notification text color (white)
+set notification-warning-bg "#ffbd2e"  # Warning notification background (light yellow)
+set notification-warning-fg "#000000"  # Warning notification text color (dark gray)
+set highlight-color         "#ff80bf"  # Highlight color (light pink)
+set highlight-active-color  "#ff64b0"  # Active highlight color (darker pink)
+set index-bg                "#ffffff"  # Index background (white)
+set index-fg                "#000000"  # Index text color (dark gray)
+set index-active-bg         "#e0e0e0"  # Active index background (light gray)
+set index-active-fg         "#000000"  # Active index text color (dark gray)
+set recolor-darkcolor       "#000000"  # Dark recolor for backgrounds (dark gray)
+set recolor-lightcolor      "#ffffff"  # Light recolor for text (white)
+set render-loading-bg       "#ffffff"  # Loading background (white)
+set render-loading-fg       "#000000"  # Loading text color (dark gray)
