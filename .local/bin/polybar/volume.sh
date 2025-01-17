@@ -21,4 +21,4 @@ case 1 in
   * ) echo "󰖁" && exit ;;
 esac
 
-echo "$icon$vol%"
+echo " $icon$vol%"

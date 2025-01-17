@@ -1,7 +1,7 @@
 #!/bin/sh
 
 base_dir="$HOME/.hidden/Notes/Struct/Plans"
-files=("Morning.org" "Afternoon.org" "Evening.org" "Night.org")
+files=("Routine.org")
 
 for file in "${files[@]}"; do
   file_path="$base_dir/$file"

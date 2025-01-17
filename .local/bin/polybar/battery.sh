@@ -2,7 +2,7 @@
 
 # No battery detected
 if [ -z "$(shopt -s nullglob; echo /sys/class/power_supply/BAT?*)" ]; then
-  printf "󱟩\n"
+  echo " 󱟩 "
 fi
 
 for battery in /sys/class/power_supply/BAT?*; do
@@ -53,6 +53,6 @@ for battery in /sys/class/power_supply/BAT?*; do
     sudo shutdown -h now
   fi
 
-  printf "%s%d%%\n" "$status" "$capacity"
+  printf "  %s%d%%  " "$status" "$capacity"
 done
 

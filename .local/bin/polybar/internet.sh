@@ -17,9 +17,9 @@ else
 fi
 
 if [ "$ethericon" = '󰱓' ]; then
-  printf "%s\n" "$ethericon"
+  printf " %s " "$ethericon"
 else
-  printf "%s\n" "$wifiicon"
+  printf " %s " "$wifiicon"
 fi
 
 # printf "%s%s\n" "$wifiicon" "$ethericon"
