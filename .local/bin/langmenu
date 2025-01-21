@@ -1,0 +1,10 @@
+#!/bin/sh
+
+chosen=$(printf "🇷🇴 Romanian\n🇩🇪 German\n🇳🇴 Norwegian" | rofi -dmenu -p "Keyboard Layout:" -i -theme-str '@import "langmenu.rasi"')
+
+case "$chosen" in
+  "🇷🇴 Romanian") setxkbmap ro ;;
+  "🇩🇪 German") setxkbmap de ;;
+  "🇳🇴 Norwegian") setxkbmap no ;;
+  *) exit 1 ;;
+esac

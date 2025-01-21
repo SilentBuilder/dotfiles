@@ -27,6 +27,10 @@ super + x
 super + z
 	powermenu
 
+# langmenu
+super + alt + z
+  langmenu
+
 # remaps
 super + shift + z
 	remaps
