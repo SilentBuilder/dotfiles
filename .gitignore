@@ -6,6 +6,9 @@
 .dmrc
 .xsession-errors
 .xsession-errors.old
+.steampath
+.steampid
+.pulse-cookie
 lazy-lock.json
 
 # personal folders
@@ -72,8 +75,13 @@ Videos
 .config/torbrowser
 .config/discord
 .config/wget
+.config/balenaEtcher
+.config/user-dirs.dirs
+.config/user-dirs.locale
 .gnupg
 .java
+.steam
+.renpy
 .librewolf
 
 # possible
