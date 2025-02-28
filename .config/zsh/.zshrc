@@ -53,4 +53,4 @@ stty stop undef # disable ctrl-s to freeze terminal
 setopt interactive_comments
 
 # load fast syntax highlighting plugin. should be last
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

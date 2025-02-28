@@ -36,19 +36,19 @@
 *fading: 35
 *fadeColor: #c4c4c4
 
-*.color0: #000000
-*.color1: #a60000
-*.color2: #006800
-*.color3: #6f5500
-*.color4: #0031a9
-*.color5: #721045
-*.color6: #005e8b
-*.color7: #595959
-*.color8: #e0e0e0
-*.color9: #a60000
-*.color10: #006800
-*.color11: #6f5500
-*.color12: #0031a9
-*.color13: #721045
-*.color14: #005e8b
-*.color15: #000000
+*.color0 : #ffffff
+*.color8 : #f2f2f2
+*.color1 : #a60000
+*.color9 : #b32626
+*.color2 : #006800
+*.color10: #267f26
+*.color3 : #6f5500
+*.color11: #846e26
+*.color4 : #0031a9
+*.color12: #2650b6
+*.color5 : #721045
+*.color13: #873461
+*.color6 : #005e8b
+*.color14: #26769c
+*.color7 : #000000
+*.color15: #595959
