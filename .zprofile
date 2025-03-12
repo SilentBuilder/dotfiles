@@ -8,7 +8,7 @@ export PATH="$HOME/.local/bin:$PATH"
 unsetopt PROMPT_SP 2>/dev/null
 
 # default programs:
-export EDITOR="nvim"
+export EDITOR="e"
 export TERMINAL="kitty"
 export TERMINAL_PROG="kitty"
 export BROWSER="firefox"

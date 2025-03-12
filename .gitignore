@@ -9,6 +9,7 @@
 .steampath
 .steampid
 .pulse-cookie
+.viminfo
 lazy-lock.json
 
 # personal folders
@@ -84,6 +85,7 @@ Videos
 .renpy
 .nuget
 .swt
+.ssh
 .librewolf
 
 # possible

@@ -13,8 +13,9 @@ alias \
   pyfl="cd ~/.hidden/Code/Python && lsa" \
   emfl="cd ~/.emacs.d && lsa" \
   sxfl="cd ~/.config/sxhkd/ && lsa" \
-  ased="cd ~/.hidden/Code-University/Labwork-ASC && lsa" \
-  pyed="cd ~/.hidden/Code-University/PycharmProjects/simpleScript/Labwork && lsa" \
+  edas="cd ~/.hidden/Code-University/Labwork-ASC && lsa" \
+  edpy="cd ~/.hidden/Code-University/PycharmProjects/simpleScript/Labwork && lsa" \
+  efos="cd ~/Documents/Academic/Semester\ 2/Operating\ Systems && lsa" \
   hdfl="cd ~/.hidden && lsa" \
   yffl="cd ~/.hidden/Y\ Files && lsa" \
   zffl="cd ~/.hidden/Z\ Files && lsa" \

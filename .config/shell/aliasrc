@@ -23,11 +23,11 @@ alias \
   ip="ip -color=auto"
 
 # abbreviate common commands:
+# e="(emacs & disown) >/dev/null 2>&1" \
 alias \
   ka="killall" \
   g="git" \
   sdn="shutdown -h now" \
-  e="$EDITOR" \
   v="$EDITOR" \
   p="pacman" \
   xi="sudo xbps-install" \
