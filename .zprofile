@@ -55,7 +55,7 @@ alias nnn='nnn -Pp'
 export LESS="R"
 export LESSOPEN="| /usr/bin/highlight -0 ansi %s 2>/dev/null"
 export MOZ_USE_XINPUT2=1
-export BAT_THEME="OneHalfLight"
+export BAT_THEME="ansi"
 
 if [ -f ~/.config/x11/.xmodmap ]; then
   xmodmap ~/.config/x11/.xmodmap

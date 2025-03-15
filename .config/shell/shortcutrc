@@ -15,6 +15,11 @@ alias \
   sxfl="cd ~/.config/sxhkd/ && lsa" \
   edas="cd ~/.hidden/Code-University/Labwork-ASC && lsa" \
   edpy="cd ~/.hidden/Code-University/PycharmProjects/simpleScript/Labwork && lsa" \
+  efdsa="cd ~/Documents/Academic/Semester\ 2/Data\ Structures\ and\ Algorithms && lsa" \
+  efds="cd ~/Documents/Academic/Semester\ 2/Dynamical\ Systems && lsa" \
+  efg="cd ~/Documents/Academic/Semester\ 2/Geometry && lsa" \
+  efga="cd ~/Documents/Academic/Semester\ 2/Graph\ Algorithms && lsa" \
+  efoop="cd ~/Documents/Academic/Semester\ 2/Object\ Oriented\ Programming && lsa" \
   efos="cd ~/Documents/Academic/Semester\ 2/Operating\ Systems && lsa" \
   hdfl="cd ~/.hidden && lsa" \
   yffl="cd ~/.hidden/Y\ Files && lsa" \
