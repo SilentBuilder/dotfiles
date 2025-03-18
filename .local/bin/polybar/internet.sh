@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # Wifi
-if [ "$(cat /sys/class/net/w*/operstate 2>/dev/null)" = 'up' ]; then
+if [ "$(cat /sys/class/net/wlan0/operstate 2>/dev/null)" = 'up' ]; then
   wifiicon="󰖩"
-elif [ "$(cat /sys/class/net/w*/operstate 2>/dev/null)" = 'down' ]; then
+elif [ "$(cat /sys/class/net/wlan0/operstate 2>/dev/null)" = 'down' ]; then
   wifiicon="󱛅"
 else
   wifiicon="󰖪"
