@@ -13,8 +13,9 @@ alias \
   pyfl="cd ~/.hidden/Code/Python && lsa" \
   emfl="cd ~/.emacs.d && lsa" \
   sxfl="cd ~/.config/sxhkd/ && lsa" \
-  edas="cd ~/.hidden/Code-University/Labwork-ASC && lsa" \
-  edpy="cd ~/.hidden/Code-University/PycharmProjects/simpleScript/Labwork && lsa" \
+  cucsa="cd ~/.hidden/Code-University/Labwork-ASC && lsa" \
+  cuoop="cd ~/.hidden/Code-University/Labwork-OOP && lsa" \
+  cupf="cd ~/.hidden/Code-University/PycharmProjects/simpleScript/Labwork && lsa" \
   efdsa="cd ~/Documents/Academic/Semester\ 2/Data\ Structures\ and\ Algorithms && lsa" \
   efds="cd ~/Documents/Academic/Semester\ 2/Dynamical\ Systems && lsa" \
   efg="cd ~/Documents/Academic/Semester\ 2/Geometry && lsa" \

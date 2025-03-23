@@ -1,6 +1,6 @@
 #!/bin/sh
 
-base_dir="$HOME/.hidden/Notes/Struct/Plans"
+base_dir="$HOME/.hidden/Notes/Plans"
 files=("R.org" "R-0001.org" "R-0002.org" "R-0003.org" "R-0004.org" "R-0005.org" \
        "R-0006.org" "R-0007.org" "R-0008.org" "R-0009.org" "R-0010.org" "R-0011.org" \
        "R-0012.org" "R-0013.org" "R-0014.org" "R-0015.org" "R-0016.org" "R-0017.org")
