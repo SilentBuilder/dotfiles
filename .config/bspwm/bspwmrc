@@ -6,7 +6,7 @@ remapd &
 pgrep -x sxhkd > /dev/null || sxhkd -c ~/.config/sxhkd/sxhkdrc ~/.config/sxhkd/private.sxhkd &
 xsetroot -cursor_name left_ptr &
 xrdb -load ~/.config/x11/xresources
-xinput set-prop 12 "libinput Accel Speed" 1.0
+xinput set-prop 12 "libinput Accel Speed" 0.0
 ~/.fehbg &
 dunst &
 pipewire &

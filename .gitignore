@@ -79,6 +79,7 @@ Videos
 .config/balenaEtcher
 .config/user-dirs.dirs
 .config/user-dirs.locale
+.config/btop.log
 .gnupg
 .java
 .steam
