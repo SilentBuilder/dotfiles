@@ -8,4 +8,10 @@ hash -d Dow=~/Downloads
 hash -d Mus=~/Music
 hash -d Pic=~/Pictures
 hash -d Vid=~/Videos
+hash -d hdfl=~/.hidden
+hash -d nofl=~/.hidden/Notes
+hash -d yffl=~/.hidden/Y\ Files
+hash -d zffl=~/.hidden/Z\ Files
+hash -d sxfl=~/.config/sxhkd
+hash -d emfl=~/.emacs.d
 

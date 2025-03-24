@@ -12,6 +12,7 @@ alias \
   Vid="cd ~/Videos && lsa" \
   pyfl="cd ~/.hidden/Code/Python && lsa" \
   emfl="cd ~/.emacs.d && lsa" \
+  nofl="cd ~/.hidden/Notes && lsa" \
   sxfl="cd ~/.config/sxhkd/ && lsa" \
   cucsa="cd ~/.hidden/Code-University/Labwork-ASC && lsa" \
   cuoop="cd ~/.hidden/Code-University/Labwork-OOP && lsa" \
