@@ -15,6 +15,7 @@ alias \
   nofl="cd ~/.hidden/Notes && lsa" \
   sxfl="cd ~/.config/sxhkd/ && lsa" \
   cucsa="cd ~/.hidden/Code-University/Labwork-ASC && lsa" \
+  cudsa="cd ~/.hidden/Code-University/Labwork-DSA && lsa" \
   cuoop="cd ~/.hidden/Code-University/Labwork-OOP && lsa" \
   cupf="cd ~/.hidden/Code-University/PycharmProjects/simpleScript/Labwork && lsa" \
   efdsa="cd ~/Documents/Academic/Semester\ 2/Data\ Structures\ and\ Algorithms && lsa" \
