@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+
+# This script converts all CBZ or CBR files in a specified folder
+# into PDF files. The resulting PDFs are placed into a folder named
+# "output" in the current working directory.
+#
+# Usage:
+#   ./convert_comics_to_pdf.sh /path/to/comics_folder
+
+# Check if user provided an argument (the comics folder)
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <path_to_folder>"
+  exit 1
+fi
+
+INPUT_DIR="$1"
+OUTPUT_DIR="output"
+
+# Create the output directory if it doesn't already exist
+mkdir -p "$OUTPUT_DIR"
+
+# Loop through all files in the input directory
+for file in "$INPUT_DIR"/*; do
+
+  # Only process if it's a .cbz or .cbr (case-insensitive)
+  case "${file,,}" in
+    *.cbz)
+      # Extract base name (without path) and remove extension
+      base_name="$(basename "$file")"
+      name="${base_name%.*}"
+
+      # Create a temporary directory for extraction
+      tmp_dir="$(mktemp -d)"
+
+      echo "Converting CBZ: $file -> $OUTPUT_DIR/$name.pdf"
+
+      # Extract images from the CBZ (which is basically a ZIP)
+      unzip -j "$file" -d "$tmp_dir" >/dev/null 2>&1
+
+      # Convert images (any format) to JPG if needed & fix orientation
+      mogrify -auto-orient -format jpg "$tmp_dir"/*
+
+      # Use ImageMagick to convert all JPGs to a single PDF
+      # (Sorting *.jpg ensures correct page order if filenames are ordered)
+      convert "$tmp_dir"/*.jpg "$OUTPUT_DIR/$name.pdf"
+
+      # Clean up temp directory
+      rm -rf "$tmp_dir"
+      ;;
+    *.cbr)
+      # Extract base name (without path) and remove extension
+      base_name="$(basename "$file")"
+      name="${base_name%.*}"
+
+      # Create a temporary directory for extraction
+      tmp_dir="$(mktemp -d)"
+
+      echo "Converting CBR: $file -> $OUTPUT_DIR/$name.pdf"
+
+      # Extract images from the CBR (RAR archive)
+      # -y to assume Yes on all queries
+      unrar e -y "$file" "$tmp_dir" >/dev/null 2>&1
+
+      # Convert images to JPG if needed & fix orientation
+      mogrify -auto-orient -format jpg "$tmp_dir"/*
+
+      # Combine into single PDF
+      convert "$tmp_dir"/*.jpg "$OUTPUT_DIR/$name.pdf"
+
+      # Clean up temp directory
+      rm -rf "$tmp_dir"
+      ;;
+    *)
+      # Not a .cbz or .cbr; ignore
+      ;;
+  esac
+
+done
+
+echo "All conversions complete. PDF files are in the '$OUTPUT_DIR' folder."

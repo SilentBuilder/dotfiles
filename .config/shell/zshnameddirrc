@@ -14,4 +14,4 @@ hash -d yffl=~/.hidden/Y\ Files
 hash -d zffl=~/.hidden/Z\ Files
 hash -d sxfl=~/.config/sxhkd
 hash -d emfl=~/.emacs.d
-
+hash -d mnfl=/mnt/hdd/Videos/Media

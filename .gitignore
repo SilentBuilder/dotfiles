@@ -81,6 +81,7 @@ Videos
 .config/user-dirs.locale
 .config/btop.log
 .config/ventoy
+.config/calibre
 .gnupg
 .java
 .steam

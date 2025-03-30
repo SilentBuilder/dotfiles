@@ -4,6 +4,7 @@ alias \
   dt="cd ~/.local/share && lsa" \
   sc="cd ~/.local/bin && lsa" \
   mn="cd /mnt && lsa" \
+  mnfl="cd /mnt/hdd/Videos/Media/ && lsa" \
   h="cd ~ && lsa" \
   Doc="cd ~/Documents && lsa" \
   Dow="cd ~/Downloads && lsa" \
