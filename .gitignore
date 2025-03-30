@@ -82,6 +82,8 @@ Videos
 .config/btop.log
 .config/ventoy
 .config/calibre
+.config/htop
+.config/btop/btop.log
 .gnupg
 .java
 .steam

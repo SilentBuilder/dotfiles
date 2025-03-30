@@ -1,0 +1,34 @@
+#!/bin/bash
+
+set -e
+
+ACTION="$1"
+
+if [[ "$ACTION" == "on" ]]; then
+  # Lower screen brightness to <5%
+  brightnessctl s 5%
+  xrandr --output eDP-1 --brightness 0.5
+
+  # CPU governor to powersave
+  # sudo cpupower frequency-set -g powersave
+
+  # Enable display power management (blank after 3 min idle)
+  xset dpms 180 180 180
+
+  notify-send "Battery Saver Mode" "Enabled low-power mode"
+elif [[ "$ACTION" == "off" ]]; then
+  # Bring back brightness to
+  brightnessctl s 50%
+  xrandr --output eDP-1 --brightness 1
+
+  # CPU governor to performance
+  #sudo cpupower frequency-set -g performance
+
+  # Reset display power management
+  xset dpms 600 600 600
+
+  notify-send "Battery Saver Mode" "Disabled and restored performance mode"
+else
+  echo "Usage: $0 on|off"
+fi
+
