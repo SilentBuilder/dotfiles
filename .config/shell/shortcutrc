@@ -19,6 +19,9 @@ alias \
   cudsa="cd ~/.hidden/Code-University/Labwork-DSA && lsa" \
   cuoop="cd ~/.hidden/Code-University/Labwork-OOP && lsa" \
   cupf="cd ~/.hidden/Code-University/PycharmProjects/simpleScript/Labwork && lsa" \
+  cdm="cd ~/.hidden/Code && lsa" \
+  cdpm="cd ~/.hidden/Code/Personal-Projects && lsa" \
+  cdp="cd ~/.hidden/Code/Python && lsa" \
   efdsa="cd ~/Documents/Academic/Semester\ 2/Data\ Structures\ and\ Algorithms && lsa" \
   efds="cd ~/Documents/Academic/Semester\ 2/Dynamical\ Systems && lsa" \
   efg="cd ~/Documents/Academic/Semester\ 2/Geometry && lsa" \
