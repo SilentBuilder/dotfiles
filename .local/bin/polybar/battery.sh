@@ -14,31 +14,31 @@ for battery in /sys/class/power_supply/BAT?*; do
     "Full") status="󰁹 " ;;
     "Discharging") 
       case 1 in
-        $(( capacity >= 98 )) ) status="󰁹 " ;;
-        $(( capacity >= 90 )) ) status="󰂂 " ;;
-        $(( capacity >= 80 )) ) status="󰂁 " ;;
-        $(( capacity >= 70 )) ) status="󰂀 " ;;
-        $(( capacity >= 60 )) ) status="󰁿 " ;;
-        $(( capacity >= 50 )) ) status="󰁾 " ;;
-        $(( capacity >= 40 )) ) status="󰁽 " ;;
-        $(( capacity >= 30 )) ) status="󰁼 " ;;
-        $(( capacity >= 20 )) ) status="󰁻 " ;;
-        $(( capacity >= 10 )) ) status="󰁺 " ;;
+        "$(( capacity >= 98 ))") status="󰁹 " ;;
+        "$(( capacity >= 90 ))") status="󰂂 " ;;
+        "$(( capacity >= 80 ))") status="󰂁 " ;;
+        "$(( capacity >= 70 ))") status="󰂀 " ;;
+        "$(( capacity >= 60 ))") status="󰁿 " ;;
+        "$(( capacity >= 50 ))") status="󰁾 " ;;
+        "$(( capacity >= 40 ))") status="󰁽 " ;;
+        "$(( capacity >= 30 ))") status="󰁼 " ;;
+        "$(( capacity >= 20 ))") status="󰁻 " ;;
+        "$(( capacity >= 10 ))") status="󰁺 " ;;
         *) status="󰂎 " ;;
       esac
     ;;
     "Charging")
       case 1 in
-        $(( capacity >= 98 )) ) status="󰂅 " ;;
-        $(( capacity >= 90 )) ) status="󰂋 " ;;
-        $(( capacity >= 80 )) ) status="󰂊 " ;;
-        $(( capacity >= 70 )) ) status="󰢞 " ;;
-        $(( capacity >= 60 )) ) status="󰂉 " ;;
-        $(( capacity >= 50 )) ) status="󰢝 " ;;
-        $(( capacity >= 40 )) ) status="󰂈 " ;;
-        $(( capacity >= 30 )) ) status="󰂇 " ;;
-        $(( capacity >= 20 )) ) status="󰂆 " ;;
-        $(( capacity >= 10 )) ) status="󰢜 " ;;
+        "$(( capacity >= 98 ))") status="󰂅 " ;;
+        "$(( capacity >= 90 ))") status="󰂋 " ;;
+        "$(( capacity >= 80 ))") status="󰂊 " ;;
+        "$(( capacity >= 70 ))") status="󰢞 " ;;
+        "$(( capacity >= 60 ))") status="󰂉 " ;;
+        "$(( capacity >= 50 ))") status="󰢝 " ;;
+        "$(( capacity >= 40 ))") status="󰂈 " ;;
+        "$(( capacity >= 30 ))") status="󰂇 " ;;
+        "$(( capacity >= 20 ))") status="󰂆 " ;;
+        "$(( capacity >= 10 ))") status="󰢜 " ;;
         *) status="󰢟 " ;;
       esac
     ;;
