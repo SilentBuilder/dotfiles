@@ -1,0 +1,35 @@
+#!/bin/bash
+
+if [ "$#" -eq 0 ]; then
+  # If no arguments are given
+  FOLDER="$(pwd)"
+  BASENAME="$(basename "$FOLDER")"
+  OUTPUT="${BASENAME}.pdf"
+
+  cd "%$FOLDER"
+elif [ "$#" -eq 2 ]; then
+  # If exactly two arguments are given
+  FOLDER="$1"
+  OUTPUT="$2"
+
+  [[ "$OUTPUT" != *.pdf ]] && OUTPUT="${OUTPUT}.pdf"
+
+  FOLDER="${FOLDER%/}"
+
+  cd "$FOLDER" || { echo "Folder not found: $FOLDER"; exit 1; }
+else
+  echo "Usage:"
+  echo "  $0                    # Use current dir and folder name as output"
+  echo "  $0 <folder> <output>  # Use specific folder and output name"
+  exit 1
+fi
+
+# Find and sort image files
+IMAGES=($(find . -maxdepth 1 -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | sort))
+
+if [ "${#IMAGES[@]}" -eq 0 ]; then
+  echo "No images found in $FOLDER. Skipping."
+  exit 0
+fi
+
+img2pdf "${IMAGES[@]}" -o "$OUTPUT" > /dev/null 2>&1 && echo "PDF created: $OUTPUT"

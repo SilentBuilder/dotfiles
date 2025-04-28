@@ -1,0 +1,25 @@
+#!/bin/bash
+
+PYTHON_SCRIPT="$HOME/.hidden/Code/Python/img_to_a4.py"
+
+if [ "$#" -eq 0 ]; then
+  # If no arguments are given
+  FOLDER="$(pwd)"
+  BASENAME="$(basename "$FOLDER")"
+  OUTPUT="$FOLDER/${BASENAME}.pdf"
+elif [ "$#" -eq 2 ]; then
+  # If exactly two arguments are given
+  FOLDER="$1"
+  OUTPUT="$2"
+
+  [[ "$OUTPUT" != *.pdf ]] && OUTPUT="${OUTPUT}.pdf"
+
+  OUTPUT="${FOLDER%/}/$(basename "$OUTPUT")"
+else
+  echo "Usage:"
+  echo "  $0                  # Uses current folder and names PDF after it"
+  echo "  $0 <folder> <name>  # Uses specific folder and PDF name"
+  exit 1
+fi
+
+python3 "$PYTHON_SCRIPT" "$FOLDER" "$OUTPUT"
