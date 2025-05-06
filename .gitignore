@@ -102,7 +102,6 @@ Videos
 
 .local/bin/*
 .local/bin/**
-!.local/bin
 !.local/bin/polybar/
 !.local/bin/polybar/**
 !.local/bin/battery-alert
