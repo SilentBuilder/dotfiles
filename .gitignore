@@ -85,6 +85,8 @@ Videos
 .config/calibre
 .config/htop
 .config/btop/btop.log
+.config/ImageMagick
+.config/gallery-dl
 .gnupg
 .java
 .steam
@@ -98,3 +100,20 @@ Videos
 .gtkrc-2.0
 .xprofile
 
+.local/bin/*
+.local/bin/**
+!.local/bin/polybar/
+!.local/bin/polybar/**
+!.local/bin/battery-alert
+!.local/bin/calcwidth
+!.local/bin/e
+!.local/bin/kitty_vidthumb
+!.local/bin/langmenu
+!.local/bin/powermenu
+!.local/bin/remapd
+!.local/bin/remaps
+!.local/bin/rofi-wifi-menu
+!.local/bin/rotdir
+!.local/bin/saver
+!.local/bin/vidthumb
+!.local/bin/xdg-terminal-exec
