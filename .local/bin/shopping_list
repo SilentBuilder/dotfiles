@@ -1,3 +1,0 @@
-#!/bin/sh
-
-cp -f ~/.hidden/Notes/Plans/Shopping.org ~/Documents/Shopping.org

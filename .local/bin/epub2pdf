@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-for file in *.epub; do
-    # Strip the .epub extension and create a .pdf file name
-    output="${file%.epub}.pdf"
-    ebook-convert "$file" "$output"
-done
