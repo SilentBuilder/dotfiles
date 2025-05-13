@@ -56,6 +56,9 @@ export LESS="R"
 export LESSOPEN="| /usr/bin/highlight -0 ansi %s 2>/dev/null"
 export MOZ_USE_XINPUT2=1
 export BAT_THEME="ansi"
+export QT_SELECT=6
+export QT6_HOST_BINS="/usr/lib/qt6/bin"
+export PATH="$QT6_HOST_BINS:$PATH"
 
 if [ -f ~/.config/x11/.xmodmap ]; then
   xmodmap ~/.config/x11/.xmodmap
