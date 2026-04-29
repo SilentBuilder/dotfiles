@@ -1,6 +1,5 @@
 #!/bin/sh
 
-terminal_emulator=$(xdg-terminal)
-"$@" &
+kitty -e "$@" &
 wait
 bspc node -f last.local

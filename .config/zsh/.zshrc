@@ -11,7 +11,7 @@ export KEYTIMEOUT=1
 
 # basic auto/tab complete:
 autoload -Uz compinit promptinit
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$2SH_VERSION"
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 promptinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
