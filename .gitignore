@@ -87,6 +87,7 @@ Videos
 .config/btop/btop.log
 .config/ImageMagick
 .config/gallery-dl
+.config/qalculate/qalc.history
 .gnupg
 .java
 .steam
