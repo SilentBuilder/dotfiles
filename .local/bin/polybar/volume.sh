@@ -14,6 +14,11 @@ split() {
 
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
+if [ "$((vol % 2))" -ne 0 ]; then
+  vol=$((vol + 1))
+  wpctl set-volume @DEFAULT_AUDIO_SINK@ "${vol}%"
+fi
+
 case 1 in
   $((vol >= 50)) ) icon="󰕾 " ;;
   $((vol >= 25)) ) icon="󰖀 " ;;

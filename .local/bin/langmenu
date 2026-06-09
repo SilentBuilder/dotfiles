@@ -4,7 +4,7 @@ chosen=$(printf "🇷🇴 Romanian\n🇩🇪 German\n🇳🇴 Norwegian" | rofi 
 
 case "$chosen" in
   "🇷🇴 Romanian") setxkbmap ro ;;
-  "🇩🇪 German") setxkbmap de ;;
+  "🇩🇪 German") setxkbmap gerintl ;;
   "🇳🇴 Norwegian") setxkbmap no ;;
   *) exit 1 ;;
 esac
