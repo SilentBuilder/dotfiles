@@ -1,4 +1,9 @@
 [Default Applications]
-image/png=nsxiv.desktop
-image/jpeg=nsxiv.desktop
+image/png=nsxiv-dir.desktop
+image/jpeg=nsxiv-dir.desktop
 application/pdf=org.pwmt.zathura.desktop
+image/gif=nsxiv-dir.desktop
+image/bmp=nsxiv-dir.desktop
+image/webp=nsxiv-dir.desktop
+image/tiff=nsxiv-dir.desktop
+image/avif=nsxiv-dir.desktop

@@ -12,7 +12,7 @@ XF86AudioMute
 
 # screenshot
 Print
-  maim --hidecursor ~/Pictures/Screenshots/Screenshot $(date +%Y-%m-%d %H%M%S).png
+  maim --hidecursor ~/Pictures/Screenshots/Screenshot\ $(date +%Y-%m-%d)\ $(date +%H%M%S).png
 
 # brightness keys
 XF86MonBrightness{Up,Down}
@@ -47,9 +47,9 @@ super + ctrl + c
 super + w
   firefox
 
-# lf file manager
+# file manager
 super + e
-  kitty lf
+  thunar
 
 # anki
 super + r
