@@ -12,7 +12,11 @@ XF86AudioMute
 
 # screenshot
 Print
-  f="$HOME/Pictures/Screenshots/Screenshot $(date +%Y-%m-%d) $(date +%H%M%S).png"; maim --hidecursor "$f" && xclip -selection clipboard -t image/png "$f"
+  screenshot
+
+# screenshot with cropping
+shift + Print
+  f="$HOME/Pictures/Screenshots/Screenshot $(date +%Y-%m-%d) $(date +%H%M%S).png"; maim --hidecursor -s "$f" && xclip -selection clipboard -t image/png "$f"
 
 # brightness keys
 XF86MonBrightness{Up,Down}
@@ -21,7 +25,7 @@ XF86MonBrightness{Up,Down}
 # lock screen
 super + x
   betterlockscreen -l
-	# xlock -mode space
+  # xlock -mode space
 
 # powermenu
 super + z

@@ -1,9 +1,14 @@
 [Default Applications]
-image/png=nsxiv-dir.desktop
-image/jpeg=nsxiv-dir.desktop
+image/png=org.xfce.ristretto.desktop
+image/jpeg=org.xfce.ristretto.desktop
 application/pdf=org.pwmt.zathura.desktop
-image/gif=nsxiv-dir.desktop
-image/bmp=nsxiv-dir.desktop
-image/webp=nsxiv-dir.desktop
-image/tiff=nsxiv-dir.desktop
-image/avif=nsxiv-dir.desktop
+image/gif=org.xfce.ristretto.desktop
+image/bmp=org.xfce.ristretto.desktop
+image/webp=org.xfce.ristretto.desktop
+image/tiff=org.xfce.ristretto.desktop
+image/avif=org.xfce.ristretto.desktop
+
+[Added Associations]
+image/gif=firefox.desktop;org.xfce.ristretto.desktop;
+image/jpeg=org.xfce.ristretto.desktop;wine-extension-pdn.desktop;
+image/png=org.xfce.ristretto.desktop;
