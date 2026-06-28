@@ -12,3 +12,4 @@ image/avif=org.xfce.ristretto.desktop
 image/gif=firefox.desktop;org.xfce.ristretto.desktop;
 image/jpeg=org.xfce.ristretto.desktop;wine-extension-pdn.desktop;
 image/png=org.xfce.ristretto.desktop;
+video/mp4=org.xfce.Parole.desktop;
